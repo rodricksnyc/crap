@@ -127,12 +127,17 @@
 
 
 		<div id="cards">
-			<div class="container-fluid">
+			<div class="container position-relative">
+				<div class="blueTag"><p class="white strong smaller">SELECT A NUMBER TO LEARN MORE!</p></div>
+			</div>
+
+			<div class="container">
 				<div class="topGradient"></div>
 				<div class="row d-flex flex-wrap">
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
 						<div class="whiteBubble vertical">
+							<div class="circle">1</div>
 
 
 							<img src="images/2.svg" class="img-fluid last-logos" alt="">
@@ -146,8 +151,10 @@
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
 						<div class="whiteBubble vertical">
+							<button type="button" class="circle even" data-container="body" data-toggle="popover" data-html="true" data-content="Identified and summarized key literature on adult learning and PL strategies to increase incorporation of adult learning principles into Designed a data dashboard to store and view survey data and developed guidance for updating and maintaining it." data-placement="bottom">2</button>
+							<!-- <div class="circle even">2</div> -->
 
-								<img src="images/2.svg" class="img-fluid last-logos" alt="">
+							<img src="images/2.svg" class="img-fluid last-logos" alt="">
 
 							<p class="blueColor text-center strong">BUILT KNOWLEDGE</p>
 
@@ -159,6 +166,7 @@
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
 						<div class="whiteBubble vertical">
+							<button type="button" class="circle" data-container="body" data-toggle="popover" data-html="true" data-content="Conducted a statewide scan of PL practices and analyzed survey data on PL processes." data-placement="top">3</button>
 
 							<img src="images/3.svg" class="img-fluid last-logos" alt="">
 
@@ -170,7 +178,10 @@
 
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
+
 						<div class="whiteBubble vertical">
+
+							<button type="button" class="circle even" data-container="body" data-toggle="popover" data-html="true" data-content="Built the <a href='https://region5compcenter.org/sites/default/files/AdultLearningToolkit-R5CC.pdf' target='_blank'><u>Adult Learning Framework and toolkit</u></a> informed by steps 2 and 3." data-placement="bottom">4</button>
 
 							<img src="images/4.svg" class="img-fluid last-logos" alt="">
 
@@ -182,6 +193,7 @@
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
 						<div class="whiteBubble vertical">
+							<button type="button" class="circle" data-container="body" data-toggle="popover" data-html="true" data-content="Produced tools, guidance, and other materials to support ALF implementation including:<br> <a href='https://region5compcenter.org/sites/default/files/R5-GuidanceForAsynchronousLearnersRegional_0.pdf' target='_blank'>» Guidance for Designing Asynchronous Learning Experiences for Adult Learners</a><br><a href='https://region5compcenter.org/sites/default/files/R5-GuidanceForAsynchronousLearnersRegional_0.pdf' target='_blank'>» Planning Engaging Learning Experiences</a>" data-placement="top">5</button>
 
 							<img src="images/5.svg" class="img-fluid last-logos" alt="">
 
@@ -193,6 +205,7 @@
 					<div class="col-lg-2 col-md-6 col-sm-6">
 
 						<div class="whiteBubble vertical">
+							<button type="button" class="circle even" data-container="body" data-toggle="popover" data-html="true" data-content="Designed a data dashboard to store and view survey data and developed guidance for updating and maintaining it." data-placement="bottom">6</button>
 
 							<img src="images/6.svg" class="img-fluid last-logos" alt="">
 
@@ -209,6 +222,49 @@
 
 		</div>
 
+
+
+<div id="bottom">
+		<div class="container">
+	<div class="row d-flex flex-wrap">
+		<div class="col-lg-4 col-md-6 col-sm-6">
+			<div class="corners d-flex flex-column align-items-start">
+				  <div class="top left"></div>
+
+
+				<p class="blueColor text-left strong">FACILITATING FACTORS</p>
+
+
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6">
+			<div class="corners d-flex flex-column align-items-start">
+					<div class="top left"></div>
+
+
+				<p class="blueColor text-left strong">CONTEXTUAL FACTORS</p>
+
+
+			</div>
+
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-6">
+				<div class="corners d-flex flex-column align-items-start">
+					<div class="top left"></div>
+
+
+				<p class="blueColor text-left strong">RESULTS TO DATE</p>
+
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+</div>
 
 
 		<section>
@@ -263,8 +319,25 @@
 		crossorigin="anonymous"></script>
 		<script type="text/javascript" src="vendorlibs/bootstrap/js/bootstrap.min.js"></script>
 
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
 		<script>
+
+		$("html").on("mouseup", function (e) {
+			var l = $(e.target);
+			if (l[0].className.indexOf("popover") == -1) {
+				$(".popover").each(function () {
+					$(this).popover("hide");
+				});
+			}
+		});
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+
 		var swiperMobile = new Swiper('.swiper-container.swiper-full-mobile', {
 			slidesPerView: 5,
 			spaceBetween: 50,
@@ -311,8 +384,8 @@
 		});
 
 
-	</script>
+		</script>
 
 
-</body>
-</html>
+	</body>
+	</html>
