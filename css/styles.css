@@ -90,6 +90,7 @@ i{
   content: "";
   left: -45px;
   top: -11px;
+      overflow: visible;
 
 }
 #white .blueColor{
