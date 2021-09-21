@@ -161,13 +161,28 @@ i{
 }
 
 ul{
+
+  width:100%;
+  list-style-type: none;
+  margin: 0;
+ padding: 0;
+}
+li{
+
+  width: 100%;
+margin: 0;
+padding: 0;
+
+}
+
+.whiteBubble ul{
   list-style-type: none !important;
   margin-left: -1.5em;
   margin-top: .5em;
 
 }
 
-ul li::before {
+.whiteBubble ul li::before {
   content: "\f101";
   font-family: "Font Awesome 5 Pro";
   color: white;
@@ -254,6 +269,10 @@ ul li::before {
   font-family: 'Merriweather', serif;
   /* font-size: 100%;
   white-space: nowrap; */
+}
+
+.tooltip-inner a{
+      color: white;
 }
 
 .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
@@ -417,6 +436,35 @@ ul li::before {
 }
 
 
+@media (min-width:1300px){
+  #cards li {
+    min-width: 15%;
+    margin: 0 1%;
+  }
+}
+
+@media (max-width:1299px){
+  #cards li {
+    margin: 0 1% !important;
+    max-width: 15%;
+  }
+
+}
+
+@media (max-width:991px){
+  #cards li{
+    margin: 0 1% !important;
+    max-width: 48%;
+    min-width:48%
+  }
+  #cards ul{
+    flex-direction: column;
+    align-items: center;
+    display: flex
+  }
+}
+
+
 @media (min-width:992px){
   .nav-item:hover .nav-link:after {
     border-bottom: .25rem solid #328612;
@@ -434,6 +482,22 @@ ul li::before {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .5rem;
     padding-left: .3rem;
+  }
+
+
+  #cards ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #cards li{
+    width: 100%;
+    margin: 0 1%;
+    padding: 0;
+    display: inline;
+    float: left;
   }
 
 }
@@ -552,6 +616,9 @@ object-fit: cover;
 border-radius: 40px;
 
 } */
+
+
+
 @media (min-width: 1400px){
   .container {
     max-width: 1300px;
@@ -758,4 +825,32 @@ border-radius: 40px;
 
   }
 
+}
+
+
+
+@media (-webkit-min-device-pixel-ratio: 2){
+  .mobileOnly{
+    display: none
+  }
+  #hero .blackOverlay {
+
+      padding-top: 0em;
+  }
+  .graphic {
+    display: none;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5){
+  .mobileOnly{
+    display: none
+  }
+  #hero .blackOverlay {
+
+      padding-top: 0em;
+  }
+  .graphic {
+    display: none;
+  }
 }
